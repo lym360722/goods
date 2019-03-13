@@ -30,19 +30,12 @@ class Banner
 
         //$banner = BannerModel::getBannerByID($id);
         $banner = BannerModel::with(['items','items.img'])->find($id); //建议选择静态方式调用
-
+        // git提交测试
 //        $banner = new BannerModel();
 //        $banner = $banner->get($id);
         if(!$banner){
 
             throw new BannerMissException();
-
-
-
-
-
-            
-
         }
         return $banner;
     }
