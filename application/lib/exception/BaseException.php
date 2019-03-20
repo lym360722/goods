@@ -8,7 +8,6 @@
 
 namespace app\lib\exception;
 
-
 use think\Exception;
 
 class BaseException extends Exception

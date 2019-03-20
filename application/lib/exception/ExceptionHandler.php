@@ -17,7 +17,6 @@ class ExceptionHandler extends Handle
     private $code;
     private $msg;
     private $errorCode;
-    //需要返回客户端当前请求的URL路径
     public function render(\Exception $e)
     {
         //instanceof 作用：（1）判断一个对象是否是某个类的实例，（2）判断一个对象是否实现了某个接口。
