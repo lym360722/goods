@@ -1,0 +1,21 @@
+[ 2019-05-13T21:50:05+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] www.goods.com/api/v1/token/user [运行时间：0.315702s][吞吐率：3.17req/s] [内存消耗：528.09kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010312s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002239s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.001568s ]
+
+---------------------------------------------------------------
+[ 2019-05-13T21:50:10+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] www.goods.com/api/v1/order [运行时间：0.078171s][吞吐率：12.79req/s] [内存消耗：631.30kb] [文件加载：74]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001742s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001181s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.001183s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.001365s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001364s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (1 , 'A513554100025309' , 0.05 , 5 , 'http://www.goods.com/images/product-vg@1.png' , '芹菜 半斤等' , '{\"id\":1,\"name\":\"\\u94c1\\u86cb\",\"mobile\":\"19912345678\",\"province\":\"\\u6f58\\u8fbe\\u4e9a\",\"city\":\"\\u5200\\u950b\\u5821\\u5792\",\"country\":\"\\u9a6c\\u68da\",\"detail\":\"\\u7b2c\\u4e8c\\u95f4\\u9a6c\\u6982\",\"user_id\":1}' , '[{\"id\":1,\"haveStock\":true,\"count\":2,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totaPrice\":0.02},{\"id\":2,\"haveStock\":true,\"count\":3,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totaPrice\":0.03}]' , 1557755409 , 1557755409) [ RunTime:0.002041s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.001902s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 2 , 35) [ RunTime:0.000533s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 3 , 35) [ RunTime:0.000235s ]
+
+---------------------------------------------------------------

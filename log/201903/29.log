@@ -1,0 +1,364 @@
+[ 2019-03-29T19:43:59+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ log ] www.goods.com/api/v1/banner/1 [运行时间：0.044090s][吞吐率：22.68req/s] [内存消耗：532.41kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003584s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.005683s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.003855s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000994s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000546s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T19:44:56+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ log ] www.goods.com/api/v1/theme?ids=1,2,3 [运行时间：0.032811s][吞吐率：30.48req/s] [内存消耗：514.63kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010419s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001422s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001327s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000318s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T19:59:45+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ log ] www.goods.com/api/v1/theme?ids=1,2,3 [运行时间：0.032444s][吞吐率：30.82req/s] [内存消耗：514.63kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002478s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.002869s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000936s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000336s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T20:00:36+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ log ] www.goods.com/api/v1/theme?ids=1,2,3 [运行时间：0.058514s][吞吐率：17.09req/s] [内存消耗：517.77kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011416s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001292s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000323s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T20:02:27+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ log ] www.goods.com/api/v1/theme?ids=1,2,3 [运行时间：0.041590s][吞吐率：24.04req/s] [内存消耗：514.53kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011529s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.003919s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.003318s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000308s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T20:02:31+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3,4
+[ log ] www.goods.com/api/v1/theme?ids=1,2,3,4 [运行时间：0.029056s][吞吐率：34.42req/s] [内存消耗：513.95kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010569s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.000986s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3,4) [ RunTime:0.002625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001007s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000283s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T20:02:51+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1
+[ log ] www.goods.com/api/v1/theme?ids=1 [运行时间：0.035832s][吞吐率：27.91req/s] [内存消耗：512.27kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010266s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001051s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1) [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.010686s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16) [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49) [ RunTime:0.000290s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T20:02:57+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3,4,5,6
+[ log ] www.goods.com/api/v1/theme?ids=1,2,3,4,5,6 [运行时间：0.029965s][吞吐率：33.37req/s] [内存消耗：513.97kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010148s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004053s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000353s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T20:03:04+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ log ] www.goods.com/api/v1/theme?ids=1,2,3 [运行时间：0.034688s][吞吐率：28.83req/s] [内存消耗：513.95kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011224s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004208s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.003425s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000306s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T20:18:41+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ log ] www.goods.com/api/v1/theme/1 [运行时间：0.012645s][吞吐率：79.08req/s] [内存消耗：226.56kb] [文件加载：42]
+
+---------------------------------------------------------------
+[ 2019-03-29T20:19:02+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ log ] www.goods.com/api/v1/theme/1 [运行时间：0.007857s][吞吐率：127.28req/s] [内存消耗：232.88kb] [文件加载：42]
+
+---------------------------------------------------------------
+[ 2019-03-29T20:19:19+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ log ] www.goods.com/api/v1/theme?ids=1,2,3 [运行时间：0.032677s][吞吐率：30.60req/s] [内存消耗：517.23kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011098s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.003404s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001080s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000345s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T20:19:25+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ log ] www.goods.com/api/v1/theme/1 [运行时间：0.007232s][吞吐率：138.28req/s] [内存消耗：226.56kb] [文件加载：42]
+
+---------------------------------------------------------------
+[ 2019-03-29T20:30:19+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ log ] www.goods.com/api/v1/theme/1 [运行时间：0.109621s][吞吐率：9.12req/s] [内存消耗：552.68kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010995s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004521s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003351s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.001288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001210s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000291s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T20:31:04+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ log ] www.goods.com/api/v1/theme/1 [运行时间：0.033015s][吞吐率：30.29req/s] [内存消耗：547.38kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011241s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001083s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000278s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T21:25:33+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ log ] www.goods.com/api/v1/theme/1 [运行时间：0.096195s][吞吐率：10.40req/s] [内存消耗：547.86kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004186s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.002483s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004039s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003993s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.001226s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001080s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000283s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T21:26:38+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ log ] www.goods.com/api/v1/theme/1 [运行时间：0.046090s][吞吐率：21.70req/s] [内存消耗：547.17kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010856s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004218s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004106s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003757s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004040s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000328s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T21:27:30+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ log ] www.goods.com/api/v1/theme/1 [运行时间：0.038924s][吞吐率：25.69req/s] [内存消耗：547.17kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009962s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001307s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003467s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000938s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000289s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T21:27:55+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ log ] www.goods.com/api/v1/theme/1 [运行时间：0.048409s][吞吐率：20.66req/s] [内存消耗：548.00kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010487s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001337s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003792s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003782s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001149s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000316s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T21:42:32+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ log ] www.goods.com/api/v1/theme/1 [运行时间：0.072558s][吞吐率：13.78req/s] [内存消耗：547.36kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010497s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.017083s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.011593s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001122s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000255s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T21:46:38+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/2
+[ log ] www.goods.com/api/v1/theme/2 [运行时间：0.054728s][吞吐率：18.27req/s] [内存消耗：547.44kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011426s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.003748s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003552s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003263s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 2 [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001288s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 17 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 50 [ RunTime:0.000278s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T21:46:44+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/3
+[ log ] www.goods.com/api/v1/theme/3 [运行时间：0.051796s][吞吐率：19.31req/s] [内存消耗：546.70kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010515s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001164s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.017066s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 3 [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001068s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 18 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 18 [ RunTime:0.000333s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T21:46:53+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ log ] www.goods.com/api/v1/theme/1 [运行时间：0.036877s][吞吐率：27.12req/s] [内存消耗：546.78kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010503s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001132s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003207s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.000919s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001333s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000249s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T22:02:33+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=1
+[ log ] www.goods.com/api/v1/product/recent?count=1 [运行时间：0.011893s][吞吐率：84.08req/s] [内存消耗：235.88kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-03-29T22:02:40+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=15
+[ log ] www.goods.com/api/v1/product/recent?count=15 [运行时间：0.007542s][吞吐率：132.59req/s] [内存消耗：235.20kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-03-29T22:12:34+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=1
+[ log ] www.goods.com/api/v1/product/recent?count=1 [运行时间：0.053673s][吞吐率：18.63req/s] [内存消耗：501.38kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002096s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003579s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 1 [ RunTime:0.027009s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T22:12:39+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=5
+[ log ] www.goods.com/api/v1/product/recent?count=5 [运行时间：0.027809s][吞吐率：35.96req/s] [内存消耗：502.14kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010375s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006132s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 5 [ RunTime:0.000585s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T22:17:08+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=5
+[ log ] www.goods.com/api/v1/product/recent?count=5 [运行时间：0.031273s][吞吐率：31.98req/s] [内存消耗：503.34kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010132s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001169s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 5 [ RunTime:0.000664s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T22:24:08+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=5
+[ log ] www.goods.com/api/v1/product/recent?count=5 [运行时间：0.077336s][吞吐率：12.93req/s] [内存消耗：507.97kb] [文件加载：56]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001573s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001105s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 5 [ RunTime:0.000749s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T22:28:54+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=5
+[ log ] www.goods.com/api/v1/product/recent?count=5 [运行时间：0.030314s][吞吐率：32.99req/s] [内存消耗：507.83kb] [文件加载：56]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001608s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003499s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 5 [ RunTime:0.000960s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T22:29:10+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ log ] www.goods.com/api/v1/banner/1 [运行时间：0.070288s][吞吐率：14.23req/s] [内存消耗：540.74kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011408s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.007682s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.003562s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001090s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000540s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T22:29:21+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ log ] www.goods.com/api/v1/theme?ids=1,2,3 [运行时间：0.033720s][吞吐率：29.66req/s] [内存消耗：523.65kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010560s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.003668s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.001043s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001235s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000462s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T22:29:37+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=5
+[ log ] www.goods.com/api/v1/theme?ids=5 [运行时间：0.023424s][吞吐率：42.69req/s] [内存消耗：520.32kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009866s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001867s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (5) [ RunTime:0.000617s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T22:31:34+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ log ] www.goods.com/api/v1/banner/1 [运行时间：0.051997s][吞吐率：19.23req/s] [内存消耗：540.35kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010726s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.005702s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.004500s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001159s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000635s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T22:41:28+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ log ] www.goods.com/api/v1/category/all [运行时间：0.043681s][吞吐率：22.89req/s] [内存消耗：521.07kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010923s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005721s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.000766s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T22:42:31+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ log ] www.goods.com/api/v1/category/all [运行时间：0.033405s][吞吐率：29.94req/s] [内存消耗：520.91kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010527s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.004533s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001224s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.001077s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T22:44:07+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ log ] www.goods.com/api/v1/category/all [运行时间：0.064409s][吞吐率：15.53req/s] [内存消耗：522.36kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034280s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.004132s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001079s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.000746s ]
+
+---------------------------------------------------------------
+[ 2019-03-29T22:48:11+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ log ] www.goods.com/api/v1/category/all [运行时间：0.047756s][吞吐率：20.94req/s] [内存消耗：521.01kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010511s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.001241s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.010313s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.000672s ]
+
+---------------------------------------------------------------

@@ -1,0 +1,86 @@
+[ 2019-04-18T21:20:15+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] www.goods.com/api/v1/token/user [运行时间：1.172740s][吞吐率：0.85req/s] [内存消耗：527.84kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011286s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005335s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.021175s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T21:20:15+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] www.goods.com/api/v1/token/user [运行时间：0.260307s][吞吐率：3.84req/s] [内存消耗：525.80kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011812s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005570s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.000587s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T21:44:42+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] www.goods.com/api/v1/token/user [运行时间：0.330281s][吞吐率：3.03req/s] [内存消耗：525.80kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011816s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.012339s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.001783s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:08:07+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/address
+[ log ] www.goods.com/api/v1/address [运行时间：0.236221s][吞吐率：4.23req/s] [内存消耗：517.56kb] [文件加载：67]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002125s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003655s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.003630s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] INSERT INTO `user_address` (`user_id`) VALUES (1) [ RunTime:0.140866s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:12:00+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] www.goods.com/api/v1/token/user [运行时间：0.354853s][吞吐率：2.82req/s] [内存消耗：525.80kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011543s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005256s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.000705s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:24:16+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/address
+[ log ] www.goods.com/api/v1/address [运行时间：0.166576s][吞吐率：6.00req/s] [内存消耗：521.79kb] [文件加载：67]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.004098s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000639s ]
+[ sql ] [ SQL ] UPDATE `user_address`  SET `name`='铁蛋',`mobile`='19912345678',`province`='外域',`city`='刀锋堡垒',`country`='马棚',`detail`='第二间马概'  WHERE  `id` = 1 [ RunTime:0.122192s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:26:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/address
+[ log ] www.goods.com/api/v1/address [运行时间：0.046319s][吞吐率：21.59req/s] [内存消耗：557.36kb] [文件加载：67]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011382s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000933s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.003642s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000608s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:27:20+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/address
+[ log ] www.goods.com/api/v1/address [运行时间：0.140692s][吞吐率：7.11req/s] [内存消耗：517.05kb] [文件加载：67]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011683s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015422s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.004063s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000764s ]
+[ sql ] [ SQL ] UPDATE `user_address`  SET `province`='潘达利亚'  WHERE  `id` = 1 [ RunTime:0.090119s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:52:50+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/address
+[ log ] www.goods.com/api/v1/address [运行时间：0.162192s][吞吐率：6.17req/s] [内存消耗：636.14kb] [文件加载：74]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001625s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000596s ]
+
+---------------------------------------------------------------
+[ 2019-04-18T22:53:16+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/address
+[ log ] www.goods.com/api/v1/address [运行时间：0.085895s][吞吐率：11.64req/s] [内存消耗：594.13kb] [文件加载：74]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009908s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.001349s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000769s ]
+[ sql ] [ SQL ] UPDATE `user_address`  SET `province`='潘达亚'  WHERE  `id` = 1 [ RunTime:0.052510s ]
+
+---------------------------------------------------------------

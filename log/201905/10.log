@@ -1,0 +1,42 @@
+[ 2019-05-10T00:01:50+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] www.goods.com/api/v1/order [运行时间：0.170228s][吞吐率：5.87req/s] [内存消耗：629.37kb] [文件加载：74]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010759s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001261s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.001215s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.001248s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001027s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (1 , 'A510177100468775' , 0.05 , 5 , 'http://www.goods.com/images/product-vg@1.png' , '芹菜 半斤等' , '{\"id\":1,\"name\":\"\\u94c1\\u86cb\",\"mobile\":\"19912345678\",\"province\":\"\\u6f58\\u8fbe\\u4e9a\",\"city\":\"\\u5200\\u950b\\u5821\\u5792\",\"country\":\"\\u9a6c\\u68da\",\"detail\":\"\\u7b2c\\u4e8c\\u95f4\\u9a6c\\u6982\",\"user_id\":1}' , '[{\"id\":1,\"haveStock\":true,\"count\":2,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totaPrice\":0.02},{\"id\":2,\"haveStock\":true,\"count\":3,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totaPrice\":0.03}]' , 1557417709 , 1557417709) [ RunTime:0.001087s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.071765s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 2 , 20) [ RunTime:0.000617s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 3 , 20) [ RunTime:0.000311s ]
+
+---------------------------------------------------------------
+[ 2019-05-10T00:09:51+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] www.goods.com/api/v1/order [运行时间：0.134496s][吞吐率：7.44req/s] [内存消耗：629.38kb] [文件加载：74]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010438s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.004397s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.003660s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (1 , 'A510181918377755' , 0.05 , 5 , 'http://www.goods.com/images/product-vg@1.png' , '芹菜 半斤等' , '{\"id\":1,\"name\":\"\\u94c1\\u86cb\",\"mobile\":\"19912345678\",\"province\":\"\\u6f58\\u8fbe\\u4e9a\",\"city\":\"\\u5200\\u950b\\u5821\\u5792\",\"country\":\"\\u9a6c\\u68da\",\"detail\":\"\\u7b2c\\u4e8c\\u95f4\\u9a6c\\u6982\",\"user_id\":1}' , '[{\"id\":1,\"haveStock\":true,\"count\":2,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totaPrice\":0.02},{\"id\":2,\"haveStock\":true,\"count\":3,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totaPrice\":0.03}]' , 1557418191 , 1557418191) [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.004357s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 2 , 21) [ RunTime:0.000466s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 3 , 21) [ RunTime:0.000270s ]
+
+---------------------------------------------------------------
+[ 2019-05-10T00:37:00+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] www.goods.com/api/v1/order [运行时间：0.102578s][吞吐率：9.75req/s] [内存消耗：629.38kb] [文件加载：74]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003197s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.002165s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.001075s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.001178s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000982s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (1 , 'A510198201965892' , 0.05 , 5 , 'http://www.goods.com/images/product-vg@1.png' , '芹菜 半斤等' , '{\"id\":1,\"name\":\"\\u94c1\\u86cb\",\"mobile\":\"19912345678\",\"province\":\"\\u6f58\\u8fbe\\u4e9a\",\"city\":\"\\u5200\\u950b\\u5821\\u5792\",\"country\":\"\\u9a6c\\u68da\",\"detail\":\"\\u7b2c\\u4e8c\\u95f4\\u9a6c\\u6982\",\"user_id\":1}' , '[{\"id\":1,\"haveStock\":true,\"count\":2,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totaPrice\":0.02},{\"id\":2,\"haveStock\":true,\"count\":3,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totaPrice\":0.03}]' , 1557419820 , 1557419820) [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.001196s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 2 , 22) [ RunTime:0.000460s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 3 , 22) [ RunTime:0.000276s ]
+
+---------------------------------------------------------------

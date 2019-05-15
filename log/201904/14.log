@@ -1,0 +1,222 @@
+[ 2019-04-14T14:55:18+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=16303
+[ log ] www.goods.com/api/v1/token/user?XDEBUG_SESSION_START=16303 [运行时间：0.811764s][吞吐率：1.23req/s] [内存消耗：518.63kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071146s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.090061s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.026019s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T14:59:00+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] www.goods.com/api/v1/token/user [运行时间：0.288438s][吞吐率：3.47req/s] [内存消耗：517.64kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011845s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004490s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.000604s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T15:05:06+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=12532
+[ log ] www.goods.com/api/v1/token/user?XDEBUG_SESSION_START=12532 [运行时间：210.588868s][吞吐率：0.00req/s] [内存消耗：519.52kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010201s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008730s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.000996s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T15:05:21+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=12532
+[ log ] www.goods.com/api/v1/token/user?XDEBUG_SESSION_START=12532 [运行时间：0.262346s][吞吐率：3.81req/s] [内存消耗：517.48kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001552s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.016307s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.001150s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T15:21:05+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=12532
+[ log ] www.goods.com/api/v1/token/user?XDEBUG_SESSION_START=12532 [运行时间：0.274873s][吞吐率：3.64req/s] [内存消耗：518.55kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.012481s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.001360s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T15:21:52+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=12532
+[ log ] www.goods.com/api/v1/token/user?XDEBUG_SESSION_START=12532 [运行时间：0.263590s][吞吐率：3.79req/s] [内存消耗：517.48kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010608s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015742s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.000649s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T15:44:00+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=14267
+[ log ] www.goods.com/api/v1/token/user?XDEBUG_SESSION_START=14267 [运行时间：546.177814s][吞吐率：0.00req/s] [内存消耗：525.34kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010784s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009716s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.001925s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T15:44:49+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=14267
+[ log ] www.goods.com/api/v1/token/user?XDEBUG_SESSION_START=14267 [运行时间：0.668006s][吞吐率：1.50req/s] [内存消耗：517.84kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010025s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009636s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.000889s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T15:45:41+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=12048
+[ log ] www.goods.com/api/v1/token/user?XDEBUG_SESSION_START=12048 [运行时间：25.816989s][吞吐率：0.04req/s] [内存消耗：517.48kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011417s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.006986s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.000730s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T15:46:39+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=12048
+[ log ] www.goods.com/api/v1/token/user?XDEBUG_SESSION_START=12048 [运行时间：33.457569s][吞吐率：0.03req/s] [内存消耗：517.48kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011695s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.011817s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.000617s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T15:49:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] www.goods.com/api/v1/token/user [运行时间：0.275029s][吞吐率：3.64req/s] [内存消耗：517.64kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011581s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015283s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.000611s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T15:50:00+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] www.goods.com/api/v1/token/user [运行时间：0.253548s][吞吐率：3.94req/s] [内存消耗：517.64kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003806s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005554s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.010824s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T16:07:04+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=11527
+[ log ] www.goods.com/api/v1/token/user?XDEBUG_SESSION_START=11527 [运行时间：752.030355s][吞吐率：0.00req/s] [内存消耗：534.38kb] [文件加载：65]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002746s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015930s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.001022s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T16:09:03+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] www.goods.com/api/v1/token/user [运行时间：0.277272s][吞吐率：3.61req/s] [内存消耗：518.80kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010924s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005841s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.001657s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T16:44:29+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/11
+[ log ] www.goods.com/api/v1/product/11 [运行时间：0.106801s][吞吐率：9.36req/s] [内存消耗：557.54kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011250s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003881s ]
+[ sql ] [ SQL ] SELECT * FROM `product` LIMIT 1 [ RunTime:0.001277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.005792s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 1 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_property` [ RunTime:0.004787s ]
+[ sql ] [ SQL ] SELECT * FROM `product_property` WHERE  `product_id` = 1 [ RunTime:0.000638s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T16:44:35+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/1
+[ log ] www.goods.com/api/v1/product/1 [运行时间：0.042647s][吞吐率：23.45req/s] [内存消耗：551.00kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011424s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004546s ]
+[ sql ] [ SQL ] SELECT * FROM `product` LIMIT 1 [ RunTime:0.001276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.003941s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_property` [ RunTime:0.004224s ]
+[ sql ] [ SQL ] SELECT * FROM `product_property` WHERE  `product_id` = 1 [ RunTime:0.000558s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T16:45:08+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/2
+[ log ] www.goods.com/api/v1/product/2 [运行时间：0.040703s][吞吐率：24.57req/s] [内存消耗：550.42kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011597s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003423s ]
+[ sql ] [ SQL ] SELECT * FROM `product` LIMIT 1 [ RunTime:0.001162s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.003723s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 1 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_property` [ RunTime:0.004076s ]
+[ sql ] [ SQL ] SELECT * FROM `product_property` WHERE  `product_id` = 1 [ RunTime:0.000652s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T16:45:58+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/2
+[ log ] www.goods.com/api/v1/product/2 [运行时间：0.037724s][吞吐率：26.51req/s] [内存消耗：550.42kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010748s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.002945s ]
+[ sql ] [ SQL ] SELECT * FROM `product` LIMIT 1 [ RunTime:0.002210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.003529s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_property` [ RunTime:0.003351s ]
+[ sql ] [ SQL ] SELECT * FROM `product_property` WHERE  `product_id` = 1 [ RunTime:0.000488s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T16:46:09+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/2
+[ log ] www.goods.com/api/v1/product/2 [运行时间：0.046487s][吞吐率：21.51req/s] [内存消耗：550.42kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011487s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.007049s ]
+[ sql ] [ SQL ] SELECT * FROM `product` LIMIT 1 [ RunTime:0.002542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.003625s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 1 [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_property` [ RunTime:0.005497s ]
+[ sql ] [ SQL ] SELECT * FROM `product_property` WHERE  `product_id` = 1 [ RunTime:0.000497s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T16:46:14+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/1
+[ log ] www.goods.com/api/v1/product/1 [运行时间：0.037675s][吞吐率：26.54req/s] [内存消耗：550.42kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010999s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001039s ]
+[ sql ] [ SQL ] SELECT * FROM `product` LIMIT 1 [ RunTime:0.002743s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.003470s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_property` [ RunTime:0.003418s ]
+[ sql ] [ SQL ] SELECT * FROM `product_property` WHERE  `product_id` = 1 [ RunTime:0.000474s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T16:46:18+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/2
+[ log ] www.goods.com/api/v1/product/2 [运行时间：0.039045s][吞吐率：25.61req/s] [内存消耗：550.42kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011067s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.002825s ]
+[ sql ] [ SQL ] SELECT * FROM `product` LIMIT 1 [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.003878s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 1 [ RunTime:0.001073s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_property` [ RunTime:0.004165s ]
+[ sql ] [ SQL ] SELECT * FROM `product_property` WHERE  `product_id` = 1 [ RunTime:0.000605s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T16:46:20+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/3
+[ log ] www.goods.com/api/v1/product/3 [运行时间：0.030841s][吞吐率：32.42req/s] [内存消耗：550.42kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011061s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001045s ]
+[ sql ] [ SQL ] SELECT * FROM `product` LIMIT 1 [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 1 [ RunTime:0.002757s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_property` [ RunTime:0.001974s ]
+[ sql ] [ SQL ] SELECT * FROM `product_property` WHERE  `product_id` = 1 [ RunTime:0.000642s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T16:47:12+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/3
+[ log ] www.goods.com/api/v1/product/3 [运行时间：0.053831s][吞吐率：18.58req/s] [内存消耗：551.02kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011734s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004357s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001172s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.003424s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 3 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_property` [ RunTime:0.004542s ]
+[ sql ] [ SQL ] SELECT * FROM `product_property` WHERE  `product_id` = 3 [ RunTime:0.000596s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T16:47:18+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/2
+[ log ] www.goods.com/api/v1/product/2 [运行时间：0.112222s][吞吐率：8.91req/s] [内存消耗：551.30kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010748s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.011088s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.005370s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 2 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_property` [ RunTime:0.066674s ]
+[ sql ] [ SQL ] SELECT * FROM `product_property` WHERE  `product_id` = 2 [ RunTime:0.000572s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T19:00:02+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=17801
+[ log ] www.goods.com/api/v1/token/user?XDEBUG_SESSION_START=17801 [运行时间：11,563.451400s][吞吐率：0.00req/s] [内存消耗：520.47kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012158s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001163s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.000590s ]
+
+---------------------------------------------------------------
+[ 2019-04-14T19:00:03+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=17801
+[ log ] www.goods.com/api/v1/token/user?XDEBUG_SESSION_START=17801 [运行时间：0.270380s][吞吐率：3.70req/s] [内存消耗：519.74kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011552s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002151s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.000819s ]
+
+---------------------------------------------------------------

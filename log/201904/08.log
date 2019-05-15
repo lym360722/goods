@@ -1,0 +1,7 @@
+[ 2019-04-08T23:07:51+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/by_category?id=3
+[ log ] www.goods.com/api/v1/product/by_category?id=3 [运行时间：0.946857s][吞吐率：1.06req/s] [内存消耗：711.04kb] [文件加载：56]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095104s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.341945s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `category_id` = 3 [ RunTime:0.039529s ]
+
+---------------------------------------------------------------

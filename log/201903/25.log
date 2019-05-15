@@ -1,0 +1,24 @@
+[ 2019-03-25T20:49:43+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ log ] www.goods.com/api/v1/theme?ids=1,2,3 [运行时间：0.016739s][吞吐率：59.74req/s] [内存消耗：234.38kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-03-25T20:50:19+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ log ] www.goods.com/api/v1/theme?ids=1,2,3 [运行时间：0.009086s][吞吐率：110.06req/s] [内存消耗：235.59kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-03-25T20:52:25+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=0.1,2,3
+[ log ] www.goods.com/api/v1/theme?ids=0.1,2,3 [运行时间：0.015969s][吞吐率：62.62req/s] [内存消耗：231.24kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-03-25T20:55:54+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ log ] www.goods.com/api/v1/banner/1 [运行时间：0.054101s][吞吐率：18.48req/s] [内存消耗：532.05kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010832s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.005057s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.010722s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.002618s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001193s ]
+
+---------------------------------------------------------------

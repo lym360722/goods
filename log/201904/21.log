@@ -1,0 +1,23 @@
+[ 2019-04-21T21:13:57+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] www.goods.com/api/v1/token/user [运行时间：1.715220s][吞吐率：0.58req/s] [内存消耗：588.66kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.221763s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.465407s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.115550s ]
+
+---------------------------------------------------------------
+[ 2019-04-21T21:15:59+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] www.goods.com/api/v1/token/user [运行时间：0.562270s][吞吐率：1.78req/s] [内存消耗：523.48kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011753s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.011763s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.001171s ]
+
+---------------------------------------------------------------
+[ 2019-04-21T21:16:12+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/address
+[ log ] www.goods.com/api/v1/address [运行时间：1.101249s][吞吐率：0.91req/s] [内存消耗：632.20kb] [文件加载：74]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011152s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.010803s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.253910s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.152685s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.051451s ]
+
+---------------------------------------------------------------
