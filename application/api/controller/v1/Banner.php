@@ -30,7 +30,7 @@ class Banner
 
         $banner = BannerModel::getBannerByID($id);
 
-        if($banner->isEmpty()){
+        if(!$banner){
             throw new BannerMissException();
         }
         return $banner;

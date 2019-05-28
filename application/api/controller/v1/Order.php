@@ -8,14 +8,15 @@
 
 namespace app\api\controller\v1;
 use app\api\controller\BaseController;
+use app\api\validate\IdIntegerValidate;
 use app\api\validate\OrderPlaceValidate;
-use app\lib\enum\ScopeEnum;
+use app\api\validate\PagingParameter;
 use app\api\service\Token as TokenService;
-use app\lib\exception\ForbiddenException;
-use app\lib\exception\TokenException;
+use app\api\Model\Order as OrderModel;
 use app\api\service\Order as OrderService;
+use app\lib\exception\OrderException;
 use FontLib\Table\Type\post;
-use think\Request;
+
 
 class Order extends BaseController
 {
@@ -32,12 +33,74 @@ class Order extends BaseController
 
 
 
-    // 前置操作 权限控制 只能用户访问
+    // 前置操作 权限控制 用户和管理员访问控制
     protected $beforeActionList = [
         // 下面的方法封装在BaseController基类
-        'checkExclusiveScope' => ['only' => 'placeOrder']
+        'checkExclusiveScope' => ['only' => 'placeOrder'],
+        'checkPrimaryScope'   => ['only' => 'getDetail,getSummaryByUser']
     ];
 
+
+
+    /**
+     * 我的订单
+     * @url 'api/:version/order/by_user?page=1&size=15'
+     * @method GET
+     * @param int $page
+     * @param int $size
+     * @return array
+     * @throws \app\lib\exception\ParameterException
+     * @throws \app\lib\exception\parametException
+     */
+    public function getSummaryByUser($page=1,$size=15)
+    {
+        (new PagingParameter())->goCheck();
+        $uid = TokenService::getCurrentUid();
+        $pagingOrders = OrderModel::getSummaryByUser($uid,$page,$size); // 返回Object
+        if($pagingOrders->isEmpty()){
+            return [
+                'data' => [],
+                'current_page' => $pagingOrders->getCurrentPage()
+            ];
+        }
+        $data = $pagingOrders->hidden(['snap_items','snap_address','prepay_id'])->toarray();
+        return [
+            'data' => $data,
+            'current_page' => $pagingOrders->getCurrentPage()
+        ];
+    }
+
+
+
+    /**
+     * 订单详情
+     * @url 'api/:version/order/:id'
+     * @method GET
+     * @param $id
+     * @return OrderModel
+     * @throws OrderException
+     * @throws \app\lib\exception\parametException
+     * @throws \think\exception\DbException
+     */
+    public function getDetail($id)
+    {
+        (new IdIntegerValidate())->goCheck();
+        $orderDetail = OrderModel::get($id);
+        if(!$orderDetail){
+            throw new OrderException();
+        }
+        return $orderDetail->hidden(['prepay_id']);
+    }
+
+    /**
+     * 下单
+     * @url 'api/:version/order'
+     * @method POST
+     * @return array
+     * @throws \app\lib\exception\ParameterException
+     * @throws \app\lib\exception\parametException
+     * @throws \think\Exception
+     */
     public function placeOrder()
     {
 

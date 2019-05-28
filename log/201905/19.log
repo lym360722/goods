@@ -1,0 +1,55 @@
+[ 2019-05-19T22:59:36+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] www.goods.com/api/v1/token/user [运行时间：1.553790s][吞吐率：0.64req/s] [内存消耗：598.08kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.263430s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.285758s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJP8-5eVyDzx1dOfTPDWu1dMmAv8' LIMIT 1 [ RunTime:0.064514s ]
+
+---------------------------------------------------------------
+[ 2019-05-19T23:06:38+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=1&size=2
+[ log ] www.goods.com/api/v1/order/by_user?page=1&size=2 [运行时间：0.096995s][吞吐率：10.31req/s] [内存消耗：633.70kb] [文件加载：71]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001051s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.003208s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.036226s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1 ORDER BY create_time desc LIMIT 0,2 [ RunTime:0.001836s ]
+
+---------------------------------------------------------------
+[ 2019-05-19T23:07:18+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=1&size=1
+[ log ] www.goods.com/api/v1/order/by_user?page=1&size=1 [运行时间：0.019842s][吞吐率：50.40req/s] [内存消耗：630.12kb] [文件加载：71]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000951s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.002691s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1 ORDER BY create_time desc LIMIT 0,1 [ RunTime:0.000490s ]
+
+---------------------------------------------------------------
+[ 2019-05-19T23:07:27+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=1&size=5
+[ log ] www.goods.com/api/v1/order/by_user?page=1&size=5 [运行时间：0.019487s][吞吐率：51.32req/s] [内存消耗：633.26kb] [文件加载：71]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000906s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.002802s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1 ORDER BY create_time desc LIMIT 0,5 [ RunTime:0.000421s ]
+
+---------------------------------------------------------------
+[ 2019-05-19T23:08:07+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=1&size=1
+[ log ] www.goods.com/api/v1/order/by_user?page=1&size=1 [运行时间：0.020099s][吞吐率：49.75req/s] [内存消耗：629.54kb] [文件加载：71]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001096s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.002908s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1 ORDER BY create_time desc LIMIT 0,1 [ RunTime:0.000594s ]
+
+---------------------------------------------------------------
+[ 2019-05-19T23:58:40+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=1&size=1
+[ log ] www.goods.com/api/v1/order/by_user?page=1&size=1 [运行时间：0.029613s][吞吐率：33.77req/s] [内存消耗：630.13kb] [文件加载：71]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001193s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.003036s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1 ORDER BY create_time desc LIMIT 0,1 [ RunTime:0.000577s ]
+
+---------------------------------------------------------------
+[ 2019-05-19T23:59:15+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=1&size=2
+[ log ] www.goods.com/api/v1/order/by_user?page=1&size=2 [运行时间：0.036812s][吞吐率：27.17req/s] [内存消耗：630.47kb] [文件加载：71]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000970s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.002897s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1 ORDER BY create_time desc LIMIT 0,2 [ RunTime:0.000508s ]
+
+---------------------------------------------------------------

@@ -39,7 +39,7 @@ class Theme
         (new IdIntegerValidate())->goCheck();
 
         $theme = ThemeModel::getThemeWithProducts($id);
-
+        //var_dump($theme);
         if($theme->isEmpty()){
             throw new ThemeException();
         }

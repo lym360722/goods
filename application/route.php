@@ -11,13 +11,13 @@
 
 use think\Route;
 
-Route::get('api/:version/banner/:id','api/:version.Banner/getBanner');
+Route::get('api/:version/banner/:id','api/:version.Banner/getBanner'); // 首页顶部banner轮播图
 
-Route::get('api/:version/theme','api/:version.Theme/getSimpleList');
+Route::get('api/:version/theme','api/:version.Theme/getSimpleList'); // 精品主题
 
 Route::get('api/:version/theme/:id','api/:version.Theme/getComplexOne');
 
-Route::get('api/:version/product/recent','api/:version.Product/getRecent');
+Route::get('api/:version/product/recent','api/:version.Product/getRecent');// 最新新品
 Route::get('api/:version/product/by_category','api/:version.Product/getAIIcategory');
 Route::get('api/:version/product/:id','api/:version.Product/getOne',[],['id'=>'\d+']);// 查询商品详情
 
@@ -36,6 +36,8 @@ Route::post('api/:version/token/user','api/:version.Token/getToken'); // 获取T
 Route::post('api/:version/address','api/:version.Address/createOrUpdateAddress');//添加用户地址
 
 Route::post('api/:version/order','api/:version.order/placeOrder');//下单
+Route::get('api/:version/order/by_user','api/:version.order/getSummaryByUser'); // 我的订单
+Route::get('api/:version/order/:id','api/:version.order/getDetail',[],['id'=>'\d+']); // 订单详情
 
 Route::post('api/:version/pay/pre_order','api/:version.Pay/getPreOrder');//支付
 

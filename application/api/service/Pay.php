@@ -64,7 +64,7 @@ class Pay
         $wxOrderData->SetTotal_fee($totalPrice*100);// 交易总金额 微信以分为单位 要*100
         $wxOrderData->SetBody('零食商贩'); // 商品描述
         $wxOrderData->SetOpenid($openID); // 用户身份标识 用户的openID
-        $wxOrderData->SetNotify_url('http://qq.com'); //异步接收微信支付结果通知的回调地址，通知url必须为外网可访问的url，不能携带参数。
+        $wxOrderData->SetNotify_url(config('secure.pay_back_url')); //异步接收微信支付结果通知的回调地址，通知url必须为外网可访问的url，不能携带参数。
         return $this->getPaySignature($wxOrderData);
     }
 

@@ -7,5 +7,6 @@
  */
 
 return [
-    'token_salt' => 'HHddFFeeLL'
+    'token_salt' => 'HHddFFeeLL',
+    'pay_back_url' => 'http://www.goods.com/api/v1/pay/notfy'
 ];
