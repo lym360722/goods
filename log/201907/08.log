@@ -1,0 +1,116 @@
+[ 2019-07-08T19:50:42+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ log ] www.goods.com/api/v1/category/all [运行时间：0.197245s][吞吐率：5.07req/s] [内存消耗：743.55kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002419s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.032287s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000933s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.020238s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.002793s ]
+
+---------------------------------------------------------------
+[ 2019-07-08T19:50:42+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/by_category?id=2
+[ log ] www.goods.com/api/v1/product/by_category?id=2 [运行时间：0.028048s][吞吐率：35.65req/s] [内存消耗：538.19kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000994s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.013363s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `category_id` = 2 [ RunTime:0.000698s ]
+
+---------------------------------------------------------------
+[ 2019-07-08T19:50:44+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ log ] www.goods.com/api/v1/banner/1 [运行时间：0.055270s][吞吐率：18.09req/s] [内存消耗：568.27kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003182s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.026111s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.005602s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001841s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000582s ]
+
+---------------------------------------------------------------
+[ 2019-07-08T19:50:44+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ log ] www.goods.com/api/v1/theme?ids=1,2,3 [运行时间：0.041527s][吞吐率：24.08req/s] [内存消耗：550.40kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001481s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.024651s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001714s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000315s ]
+
+---------------------------------------------------------------
+[ 2019-07-08T19:50:44+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent
+[ log ] www.goods.com/api/v1/product/recent [运行时间：0.020403s][吞吐率：49.01req/s] [内存消耗：537.23kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001029s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001853s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 15 [ RunTime:0.000652s ]
+
+---------------------------------------------------------------
+[ 2019-07-08T19:51:47+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ log ] www.goods.com/api/v1/category/all [运行时间：0.023095s][吞吐率：43.30req/s] [内存消耗：544.98kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001227s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.002332s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001643s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.000542s ]
+
+---------------------------------------------------------------
+[ 2019-07-08T19:51:47+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/by_category?id=2
+[ log ] www.goods.com/api/v1/product/by_category?id=2 [运行时间：0.014793s][吞吐率：67.60req/s] [内存消耗：536.83kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000954s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.002058s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `category_id` = 2 [ RunTime:0.000628s ]
+
+---------------------------------------------------------------
+[ 2019-07-08T19:51:49+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ log ] www.goods.com/api/v1/banner/1 [运行时间：0.028220s][吞吐率：35.44req/s] [内存消耗：566.93kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004316s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.001767s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.002035s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.002181s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000491s ]
+
+---------------------------------------------------------------
+[ 2019-07-08T19:51:49+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ log ] www.goods.com/api/v1/theme?ids=1,2,3 [运行时间：0.022967s][吞吐率：43.54req/s] [内存消耗：549.63kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001270s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001876s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.003010s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.003128s ]
+
+---------------------------------------------------------------
+[ 2019-07-08T19:51:49+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent
+[ log ] www.goods.com/api/v1/product/recent [运行时间：0.016821s][吞吐率：59.45req/s] [内存消耗：536.82kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001127s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.002856s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 15 [ RunTime:0.000598s ]
+
+---------------------------------------------------------------
+[ 2019-07-08T19:51:53+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/11
+[ log ] www.goods.com/api/v1/product/11 [运行时间：0.082347s][吞吐率：12.14req/s] [内存消耗：589.27kb] [文件加载：65]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001167s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.002221s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.027838s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 11 ORDER BY `order`  asc [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001756s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (19,20,21,22,23,24,25,26,27,29,28,62,63) [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_property` [ RunTime:0.024987s ]
+[ sql ] [ SQL ] SELECT * FROM `product_property` WHERE  `product_id` = 11 [ RunTime:0.000575s ]
+
+---------------------------------------------------------------
+[ 2019-07-08T19:53:22+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/11
+[ log ] www.goods.com/api/v1/product/11 [运行时间：0.088687s][吞吐率：11.28req/s] [内存消耗：588.59kb] [文件加载：65]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002152s ] mysql:dbname=goods;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.002830s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.002130s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 11 ORDER BY `order`  asc [ RunTime:0.000936s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.016198s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (19,20,21,22,23,24,25,26,27,29,28,62,63) [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_property` [ RunTime:0.002193s ]
+[ sql ] [ SQL ] SELECT * FROM `product_property` WHERE  `product_id` = 11 [ RunTime:0.000650s ]
+
+---------------------------------------------------------------
